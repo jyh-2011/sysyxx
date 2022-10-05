@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>走进上音-001</title>
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+
+        </script>
+        <style>
+            .pan{
+                position: relative;
+                padding: 5px;
+                background-color:#ffffff;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius:25px;
+                margin:5px;
+            }
+            .fimg{
+                width: 100%;
+                height: 100%;
+                background: url("6513942fb9e3387156bbfae06ef93742.jpeg") no-repeat;
+                background-size: 100% 100%;
+                position: relative;
+            }
+            .buton{
+                width: 100px;
+                height: 100px;
+                position:absolute;
+                left: 48%;
+                top: 40%;
+                background: transparent;
+                border-color: rgb(255, 255, 255);
+                color:white;
+                font-size: 30px;
+                border-radius:25px;
+            }
+            .buton:hover{
+                background: rgba(255, 255, 255, 0.489);
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $(".buton").hover(function(){
+                    $(".fimg").css("filter","blur(2px)");
+                });
+                $(".buton").mouseleave(function(){
+                    $(".fimg").css("filter","blur(0px)");
+                });
+            });
+        </script>
+        <div class="fimg"></div>
+        
+        <a href="mainpage.html"><button class="buton">上音历史</button> </a>    
+        <a href="mainpage2.html"><button class="buton"style="top:60%">上音设施</button> </a>               
+        <div class="pan">
+            <h1>大</h1>
+            <p>上海音乐学院实验学校是一所九年一贯制学校<p>
+            <p>师生共计约3000人<p>
+        </div>
+        <div class="pan">
+            <h1>强</h1>
+            <p>上音实验学校成绩名列前茅<p>
+            <p>今年中考成绩更是辉煌<p>
+        </div>
+        <div class="pan">
+            <h1>全</h1>
+            <p>上音实验学校设施齐全<p>
+            <p>有四个篮球场、超大礼堂、配备各种实验室等<p>
+        </div>
+    </body>
+</html>
